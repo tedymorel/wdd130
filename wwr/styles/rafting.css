@@ -26,7 +26,10 @@ header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
-
+/* HEADER */
+header {
+  background-color: var(--secondary-color);
+}
 /* HEADINGS */
 h1, h2 {
   font-family: var(--heading-font);
