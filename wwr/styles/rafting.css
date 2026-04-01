@@ -1,15 +1,18 @@
 :root {
   --primary-color: #1b4965;
   --secondary-color: #005f73;
-  --accent1-color: #2a6f97;
+  --accent1-color: #1e5574;
   --accent2-color: #bee9e8;
+  --white-color: #ffffff;
 
   --heading-font: Arial, sans-serif;
   --body-font: Verdana, sans-serif;
 }
 
 /* RESET */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,7 +21,7 @@
 /* BODY */
 body {
   font-family: var(--body-font);
-  color: var(--accent1-color);
+  color: var(--primary-color);
 }
 
 /* LAYOUT */
@@ -65,8 +68,8 @@ article {
   width: 100%;
   padding: 16px;
   text-align: center;
-  background-color: var(--accent1-color);
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   opacity: 0.8;
 }
 
@@ -93,7 +96,7 @@ header {
   grid-template-columns: 200px 1fr;
   align-items: center;
   background-color: var(--secondary-color);
-  color: white;
+  color: var(--white-color);
   padding: 10px 20px;
   border-bottom: 2px solid var(--primary-color);
 }
@@ -114,7 +117,7 @@ header nav ul {
 
 header nav ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--white-color);
   font-weight: bold;
   font-size: 1.1rem;
   transition: color 0.3s ease;
@@ -202,12 +205,12 @@ footer {
 }
 
 footer p {
-  color: white;
+  color: var(--white-color);
   margin: 0;
 }
 
 footer a {
-  color: white;
+  color: var(--white-color);
   text-decoration: none;
 }
 
