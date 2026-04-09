@@ -69,9 +69,8 @@ article {
   width: 100%;
   padding: 16px;
   text-align: center;
-  background-color: var(--primary-color);
+  background-color: rgba(27, 73, 101, 0.8);
   color: var(--white-color);
-  opacity: 0.8;
 }
 
 /* ARTICLE OVER IMAGE */
@@ -206,12 +205,13 @@ footer {
 }
 
 footer p {
-  color: var(--white-color);
+  color: var(--accent2-color);
+  color: var(--accent2-color);
   margin: 0;
 }
 
 footer a {
-  color: var(--white-color);
+  color: var(--accent2-color);
   text-decoration: none;
 }
 
