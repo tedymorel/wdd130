@@ -69,7 +69,7 @@ article {
   width: 100%;
   padding: 16px;
   text-align: center;
-  background-color: rgba(27, 73, 101, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   color: var(--white-color);
 }
 
@@ -198,6 +198,7 @@ figure img {
 /* Footer */
 footer {
   background-color: var(--secondary-color);
+  color: var(--white-color);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -205,13 +206,12 @@ footer {
 }
 
 footer p {
-  color: var(--accent2-color);
-  color: var(--accent2-color);
+  color: var(--white-color);
   margin: 0;
 }
 
 footer a {
-  color: var(--accent2-color);
+  color: var(--white-color);
   text-decoration: none;
 }
 
@@ -234,6 +234,10 @@ footer a:hover {
   color: var(--white-color);
   padding: 40px 20px;
   text-align: center;
+}
+
+.contact-hero h1 {
+  color: var(--white-color);
 }
 
 .contact-info {
@@ -279,7 +283,9 @@ footer a:hover {
 .map-container iframe {
   width: 100%;
   height: 300px;
-  border: none;
+  /* Moved from inline style in contact.html */
+  border: 0;
+  width: 100%;
   border-radius: 8px;
 }
 
