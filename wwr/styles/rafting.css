@@ -4,6 +4,9 @@
   --accent1-color: #1e5574;
   --accent2-color: #bee9e8;
   --white-color: #ffffff;
+  --black-70: rgba(0, 0, 0, 0.7);
+  --black-50: rgba(0, 0, 0, 0.5);
+  --zebra-gray: #f2f2f2;
 
   --heading-font: Arial, sans-serif;
   --body-font: Verdana, sans-serif;
@@ -78,7 +81,7 @@ h1, h2, h3 {
   width: 100%;
   padding: 16px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--black-70);
   color: var(--white-color);
 }
 
@@ -161,9 +164,8 @@ header nav ul li a:hover {
 .home-hero .hero-content{
   position: relative; /* Ensure content is above the image */
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  background-color: var(--black-50); /* Semi-transparent background for readability */
   color: var(--white-color);
-  padding: 20px;
   border-radius: 8px;
   max-width: 80%;
   line-height: 1.5;
@@ -643,7 +645,7 @@ table th {
 }
 
 table tr:nth-child(even) {
-  background-color: #f2f2f2; /* Zebra striping */
+  background-color: var(--zebra-gray); /* Zebra striping */
 }
 
 table tr:hover {
