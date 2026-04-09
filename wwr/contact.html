@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact White Water Rafting Co. for inquiries, reservations, or website suggestions.">
+    <title>WDD 130 | Tedy Yannick Guei | Contact Us</title>
+    <meta name="author" content="Yannick Guei">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/z-wwr-blue.jpg" alt="Rafting Logo" width="180" loading="lazy">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-hero">
+            <h1>Contact Us</h1>
+        </div>
+
+        <section class="contact-info">
+            <div class="company-details">
+                <h2>Our Location</h2>
+                <address>
+                    White Water Rafting Co.<br>
+                    123 Adventure Way<br>
+                    River City, RC 54321<br>
+                    <br>
+                    <strong>Phone:</strong> <a href="tel:+15551234567">555-123-4567</a><br>
+                    <strong>Email:</strong> <a href="mailto:info@whitewaterrafting.local">info@whitewaterrafting.local</a>
+                </address>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11394.040175515286!2d-111.8344161!3d44.4431945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5351e55555555555%3A0x1234567890abcdef!2sIsland%20Park%2C%20ID%2083429!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <div class="employees-section">
+                <h2>Our Team</h2>
+                <div class="employee-gallery">
+                    <figure>
+                        <img src="images/happy.jpg" alt="Jane Doe" loading="lazy">
+                        <figcaption>Jane Doe, Guide</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/happy.jpg" alt="John Smith" loading="lazy">
+                        <figcaption>John Smith, Manager</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/happy.jpg" alt="Emily Davis" loading="lazy">
+                        <figcaption>Emily Davis, Support</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post" class="contact-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="radio-group">
+                    <legend>Purpose of Message:</legend>
+                    <div class="radio-option">
+                        <input type="radio" id="general" name="purpose" value="general" checked>
+                        <label for="general">General Inquiry</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        <label for="reservation">Reservation Question</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="suggestion" name="purpose" value="website">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="subscribe" name="subscribe" checked>
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Submit Your Message</button>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>© 2026 White Water Rafting Co. | Yannick Guei</p>
+
+        <nav class="socialmedia">
+            <a href="#">
+                <img src="images/facebook-bw.svg" alt="Facebook" width="70" loading="lazy">
+            </a>
+            <a href="#">
+                <img src="images/youtube-bw.svg" alt="YouTube" width="70" loading="lazy">
+            </a>
+            <a href="#">
+                <img src="images/instagram-bw.svg" alt="Instagram" width="70" loading="lazy">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
