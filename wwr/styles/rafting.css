@@ -40,25 +40,14 @@ p {
   line-height: 1.6;
 }
 
-section {
-  margin: 20px 0;
-}
-
-article {
-  margin: 20px 0;
-}
+section, article { margin: 20px 0; }
 /* HEADINGS */
-h1,
-h2,
-h3,
-h4 {
+h1,h2,h3,h4 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-h1, h2, h3 {
-  margin-bottom: 10px;
-}
+h1, h2, h3 { margin-bottom: 10px; }
 
 /* SPACING */
 
@@ -127,18 +116,9 @@ header nav ul {
   padding: 0;
 }
 
-header nav ul li a {
-  text-decoration: none;
-  color: var(--white-color);
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
+header nav ul li a { text-decoration: none; color: var(--white-color); font-weight: bold; font-size: 1.1rem; transition: color 0.3s ease; }
 
-header nav ul li a:hover {
-  color: var(--accent2-color);
-  text-decoration: underline;
-}
+header nav ul li a:hover { color: var(--accent2-color); text-decoration: underline; }
 
 /* HOME PAGE SPECIFIC STYLES */
 
@@ -172,17 +152,9 @@ header nav ul li a:hover {
   padding: 25px;
 }
 
-.home-hero h1 {
-  color: var(--white-color);
-  margin-bottom: 10px;
-  font-size: 2.5rem;
-}
+.home-hero h1 { color: var(--white-color); margin-bottom: 10px; font-size: 2.5rem; }
 
-.home-hero p {
-  color: var(--white-color);
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-}
+.home-hero p { color: var(--white-color); margin-bottom: 20px; font-size: 1.2rem; }
 
 .call-to-action-button {
   display: inline-block;
@@ -195,9 +167,7 @@ header nav ul li a:hover {
   transition: background-color 0.3s ease;
 }
 
-.call-to-action-button:hover {
-  background-color: var(--secondary-color);
-}
+.call-to-action-button:hover { background-color: var(--secondary-color); }
 
 .newsletter-signup {
   background-color: var(--accent2-color);
@@ -230,14 +200,8 @@ header nav ul li a:hover {
   display: block;
 }
 
-.newsletter-form input[type="text"],
-.newsletter-form input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid var(--primary-color);
-  border-radius: 4px;
-  font-family: inherit;
-}
+.newsletter-form input[type="text"], .newsletter-form input[type="email"], 
+.form-group input[type="text"], .form-group input[type="email"], .form-group textarea { width: 100%; padding: 10px; border: 1px solid var(--primary-color); border-radius: 4px; font-family: inherit; }
 
 /* SOCIAL MEDIA */
 .socialmedia a {
@@ -258,15 +222,9 @@ header nav ul li a:hover {
   text-align: center;
 }
 
-.history p {
-  grid-column: 1 / span 2;
-}
+.history p { grid-column: 1 / span 2; }
 
-.history img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
+.history img, .trip-card img, .home-grid-content .grid-item img { width: 100%; height: auto; border-radius: 8px; }
 
 /* Adventure Section Layout */
 .adventures {
@@ -280,35 +238,15 @@ header nav ul li a:hover {
   gap: 20px;
 }
 
+.adventure-container figure { margin: 0; width: 100%; height: auto; min-height: 300px; border-radius: 8px; }
 
-.adventure-container figure {
-  margin: 0;
-  width: 100%;
-  height: auto;
-  /* Moved from inline style in contact.html */
-  min-height: 300px;
-  border-radius: 8px;
-}
-.adventure-gallery {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
+.adventure-gallery { display: flex; justify-content: space-between; gap: 10px; }
 
-.adventure-gallery img {
-  width: 100%;
-  height: auto;
-}
+.adventure-gallery img { width: 100%; height: auto; }
 
-figure {
-  text-align: center;
-  width: 100%;
-}
+figure { text-align: center; width: 100%; }
 
-figure img {
-  width: 100%;
-  height: auto;
-}
+figure img { width: 100%; height: auto; }
 
 /* Footer */
 footer {
@@ -320,28 +258,15 @@ footer {
   align-items: center;
 }
 
-footer p {
-  color: var(--white-color);
-  margin: 0;
-}
+footer p { color: var(--white-color); margin: 0; }
 
-footer a {
-  color: var(--white-color);
-  text-decoration: none;
-}
+footer a { color: var(--white-color); text-decoration: none; }
 
-.socialmedia {
-  display: flex;
-  gap: 15px;
-}
+.socialmedia { display: flex; gap: 15px; }
 
-.socialmedia img {
-  width: 32px;
-  height: auto;
-}
-footer a:hover {
-  text-decoration: underline;
-}
+.socialmedia img, footer .socialmedia img { width: 32px; height: auto; }
+
+footer a:hover { text-decoration: underline; }
 
 /* Contact Us Page Layout */
 .contact-hero {
@@ -351,9 +276,7 @@ footer a:hover {
   text-align: center;
 }
 
-.contact-hero h1 {
-  color: var(--white-color);
-}
+.contact-hero h1 { color: var(--white-color); }
 
 .contact-info {
   display: flex;
@@ -362,11 +285,8 @@ footer a:hover {
   margin: 20px 0;
 }
 
-.company-details, .employees-section {
-  background-color: var(--accent2-color);
-  padding: 20px;
-  border-radius: 8px;
-}
+.company-details, .employees-section, .contact-form-section, .trip-card, .home-grid-content .grid-item {
+  background-color: var(--accent2-color); padding: 20px; border-radius: 8px; }
 
 .company-details {
   display: grid;
@@ -380,21 +300,13 @@ footer a:hover {
   margin-bottom: 20px;
 }
 
-.company-details address {
-  font-style: normal;
-  line-height: 1.6;
-}
+.company-details address { font-style: normal; line-height: 1.6; }
 
 .company-details address a {
   color: var(--primary-color);
   text-decoration: none;
   font-weight: bold;
 }
-
-.company-details address a:hover {
-  text-decoration: underline;
-}
-
 .map-container iframe {
   width: 100%;
   height: 300px;
@@ -418,12 +330,6 @@ footer a:hover {
 }
 
 /* Form Styles */
-.contact-form-section {
-  background-color: var(--accent2-color);
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
 
 .contact-form fieldset {
   border: 2px solid var(--primary-color);
@@ -438,9 +344,7 @@ footer a:hover {
   padding: 0 5px;
 }
 
-.form-group {
-  margin-bottom: 15px;
-}
+.form-group { margin-bottom: 15px; }
 
 .form-group label {
   display: block;
@@ -448,23 +352,9 @@ footer a:hover {
   margin-bottom: 5px;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid var(--primary-color);
-  border-radius: 4px;
-  font-family: inherit;
-}
+.radio-group .radio-option { margin-bottom: 5px; }
 
-.radio-group .radio-option {
-  margin-bottom: 5px;
-}
-
-.checkbox-group {
-  margin-top: 15px;
-}
+.checkbox-group { margin-top: 15px; }
 
 .submit-btn {
   background-color: var(--primary-color);
@@ -478,9 +368,7 @@ footer a:hover {
   transition: background-color 0.3s;
 }
 
-.submit-btn:hover {
-  background-color: var(--secondary-color);
-}
+.submit-btn:hover { background-color: var(--secondary-color); }
 
 .home-grid-content {
   display: grid;
@@ -489,21 +377,9 @@ footer a:hover {
   padding: 40px 20px;
   text-align: center;
 }
+.home-grid-content .grid-item { box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
 
-.home-grid-content .grid-item {
-  background-color: var(--accent2-color);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.home-grid-content .grid-item img {
-  width: 100%;
-  max-width: 300px; /* Limit image size */
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
+.home-grid-content .grid-item img { width: 100%; max-width: 300px; margin-bottom: 15px; }
 
 .home-grid-content .grid-item h3 {
   color: var(--primary-color);
@@ -518,7 +394,7 @@ footer a:hover {
 /* TRIPS PAGE SPECIFIC STYLES */
 
 .trips-hero {
-  background-image: url('../images/hero-transparency-1024.jpg'); /* Use a background image */
+  background-image: url('../wrr/images/hero-transparency-1024.jpg'); /* Use a background image */
   background-size: cover;
   background-position: center;
   color: var(--white-color);
@@ -535,7 +411,7 @@ footer a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 0;
 }
 
@@ -544,15 +420,9 @@ footer a:hover {
   z-index: 1;
 }
 
-.trips-hero h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-}
+.trips-hero h1 { font-size: 3rem; margin-bottom: 15px; }
 
-.trips-hero p {
-  font-size: 1.3rem;
-  margin-bottom: 30px;
-}
+.trips-hero p { font-size: 1.3rem; margin-bottom: 30px; }
 
 .trip-descriptions {
   padding: 40px 20px;
@@ -571,14 +441,7 @@ footer a:hover {
   gap: 30px;
 }
 
-.trip-card {
-  background-color: var(--accent2-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: center;
-  padding-bottom: 20px;
-}
+.trip-card { box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; text-align: center; padding-bottom: 20px; }
 
 .trip-card img {
   width: 100%;
@@ -608,9 +471,7 @@ footer a:hover {
   color: var(--primary-color);
 }
 
-.trip-card ul li {
-  margin-bottom: 5px;
-}
+.trip-card ul li { margin-bottom: 5px; }
 
 .trip-table-section {
   padding: 40px 20px;
@@ -648,21 +509,11 @@ table tr:nth-child(even) {
   background-color: var(--zebra-gray); /* Zebra striping */
 }
 
-table tr:hover {
-  background-color: var(--accent2-color);
-}
+table tr:hover { background-color: var(--accent2-color); }
 
-/* General adjustments for existing elements */
-/* Ensure social media icons in footer are 32px as per the CSS */
-footer .socialmedia img {
-  width: 32px;
-  height: auto;
-}
+main p { text-align: left; }
 
-/* Ensure general p styles don't override specific ones */
-main p {
-  text-align: left; /* Default for main content paragraphs */
-}
+.home-hero p, .home-grid-content .grid-item p, .trips-hero p { text-align: center; }
 
 /* Override for specific sections */
 .home-hero p, .home-grid-content .grid-item p, .trips-hero p {
