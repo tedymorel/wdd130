@@ -7,7 +7,6 @@
   --black-70: rgba(0, 0, 0, 0.7);
   --black-50: rgba(0, 0, 0, 0.5);
   --zebra-gray: #f2f2f2;
-
   --heading-font: Arial, sans-serif;
   --body-font: Verdana, sans-serif;
 }
@@ -74,14 +73,20 @@ h1, h2, h3 { margin-bottom: 10px; }
   color: var(--white-color);
 }
 
-/* ARTICLE OVER IMAGE */
-.hero article {
+/* ARTICLE OVER IMAGE — about page only (not home-hero) */
+.hero:not(.home-hero) article {
   position: absolute;
   bottom: 20px;
   left: 20px;
   background-color: var(--accent2-color);
   color: var(--primary-color);
   padding: 10px;
+}
+
+/* HOME HERO — article wraps the overlay image and content card */
+.home-hero article {
+  position: relative;
+  z-index: 1;
 }
 
 /* IMAGE INSIDE ARTICLE */
@@ -388,13 +393,12 @@ footer a:hover { text-decoration: underline; }
 
 .home-grid-content .grid-item p {
   color: var(--primary-color);
-  text-align: center; /* Center align paragraphs in grid items */
 }
 
 /* TRIPS PAGE SPECIFIC STYLES */
 
 .trips-hero {
-  background-image: url('../wrr/images/hero-transparency-1024.jpg'); /* Use a background image */
+  background-image: url('../images/hero-transparency-1024.jpg');
   background-size: cover;
   background-position: center;
   color: var(--white-color);
@@ -411,7 +415,7 @@ footer a:hover { text-decoration: underline; }
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--black-70);
   z-index: 0;
 }
 
@@ -513,12 +517,10 @@ table tr:hover { background-color: var(--accent2-color); }
 
 main p { text-align: left; }
 
-.home-hero p, .home-grid-content .grid-item p, .trips-hero p { text-align: center; }
-
-/* Override for specific sections */
-.home-hero p, .home-grid-content .grid-item p, .trips-hero p {
-  text-align: center;
-}
+/* Override text-align for centered hero/grid paragraphs */
+.home-hero p,
+.home-grid-content .grid-item p,
+.trips-hero p { text-align: center; }
 
 /* Responsive adjustments for Contact Us page */
 @media (max-width: 768px) {
