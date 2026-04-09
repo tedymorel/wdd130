@@ -32,7 +32,18 @@ footer {
   width: 100%;
   margin: 0 auto;
 }
+p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
 
+section {
+  margin: 20px 0;
+}
+
+article {
+  margin: 20px 0;
+}
 /* HEADINGS */
 h1,
 h2,
@@ -42,14 +53,12 @@ h4 {
   color: var(--primary-color);
 }
 
-/* SPACING */
-nav,
-p,
-section,
-article {
-  margin: 16px;
-  padding: 8px;
+h1, h2, h3 {
+  margin-bottom: 10px;
 }
+
+/* SPACING */
+
 
 /* HERO */
 .hero {
@@ -149,7 +158,7 @@ header nav ul li a:hover {
   z-index: -1; /* Place image behind content */
 }
 
-.home-hero .hero-content {
+.home-hero .hero-content{
   position: relative; /* Ensure content is above the image */
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
@@ -157,6 +166,8 @@ header nav ul li a:hover {
   padding: 20px;
   border-radius: 8px;
   max-width: 80%;
+  line-height: 1.5;
+  padding: 25px;
 }
 
 .home-hero h1 {
@@ -270,8 +281,12 @@ header nav ul li a:hover {
 
 .adventure-container figure {
   margin: 0;
+  width: 100%;
+  height: auto;
+  /* Moved from inline style in contact.html */
+  min-height: 300px;
+  border-radius: 8px;
 }
-
 .adventure-gallery {
   display: flex;
   justify-content: space-between;
@@ -381,9 +396,6 @@ footer a:hover {
 .map-container iframe {
   width: 100%;
   height: 300px;
-  /* Moved from inline style in contact.html */
-  border: 0;
-  width: 100%;
   border-radius: 8px;
 }
 
@@ -653,4 +665,25 @@ main p {
 /* Override for specific sections */
 .home-hero p, .home-grid-content .grid-item p, .trips-hero p {
   text-align: center;
+}
+
+/* Responsive adjustments for Contact Us page */
+@media (max-width: 768px) {
+  .company-details {
+    grid-template-columns: 1fr; /* Stack company details on small screens */
+  }
+
+  .employee-gallery {
+    grid-template-columns: 1fr; /* Stack employee profiles on small screens */
+  }
+
+  .employee-gallery img {
+    max-width: 100px; /* Adjust image size for smaller screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .employee-gallery {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for employee profiles on medium screens */
+  }
 }
