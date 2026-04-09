@@ -128,6 +128,104 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* HOME PAGE SPECIFIC STYLES */
+
+.home-hero {
+  position: relative;
+  display: flex; /* Use flexbox for content alignment */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 400px; /* Ensure hero has a minimum height */
+}
+
+.home-hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container */
+  z-index: -1; /* Place image behind content */
+}
+
+.home-hero .hero-content {
+  position: relative; /* Ensure content is above the image */
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  color: var(--white-color);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.home-hero h1 {
+  color: var(--white-color);
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.home-hero p {
+  color: var(--white-color);
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.call-to-action-button {
+  display: inline-block;
+  background-color: var(--accent1-color);
+  color: var(--white-color);
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.call-to-action-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.newsletter-signup {
+  background-color: var(--accent2-color);
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.newsletter-signup h2 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.newsletter-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.newsletter-form .form-group {
+  text-align: left;
+}
+
+.newsletter-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  font-family: inherit;
+}
+
 /* SOCIAL MEDIA */
 .socialmedia a {
   text-decoration: none;
@@ -368,4 +466,191 @@ footer a:hover {
 
 .submit-btn:hover {
   background-color: var(--secondary-color);
+}
+
+.home-grid-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.home-grid-content .grid-item {
+  background-color: var(--accent2-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-grid-content .grid-item img {
+  width: 100%;
+  max-width: 300px; /* Limit image size */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.home-grid-content .grid-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.home-grid-content .grid-item p {
+  color: var(--primary-color);
+  text-align: center; /* Center align paragraphs in grid items */
+}
+
+/* TRIPS PAGE SPECIFIC STYLES */
+
+.trips-hero {
+  background-image: url('../images/hero-transparency-1024.jpg'); /* Use a background image */
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.trips-hero::before { /* Overlay for better text readability */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.trips-hero h1, .trips-hero p, .trips-hero .call-to-action-button {
+  position: relative;
+  z-index: 1;
+}
+
+.trips-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.trips-hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.trip-descriptions {
+  padding: 40px 20px;
+}
+
+.trip-descriptions h2, .trip-table-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid for trips */
+  gap: 30px;
+}
+
+.trip-card {
+  background-color: var(--accent2-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.trip-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.trip-card p {
+  padding: 0 15px;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  text-align: left; /* Align paragraph text left within card */
+}
+
+.trip-card ul {
+  list-style: none;
+  padding: 0 15px;
+  margin-bottom: 15px;
+  text-align: left;
+  color: var(--primary-color);
+}
+
+.trip-card ul li {
+  margin-bottom: 5px;
+}
+
+.trip-table-section {
+  padding: 40px 20px;
+  margin-top: 30px;
+  background-color: var(--accent2-color);
+  border-radius: 8px;
+}
+
+.table-container {
+  overflow-x: auto; /* Make table scrollable on small screens */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: var(--white-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  border: 1px solid var(--primary-color);
+  padding: 12px 15px;
+  text-align: left;
+}
+
+table th {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Zebra striping */
+}
+
+table tr:hover {
+  background-color: var(--accent2-color);
+}
+
+/* General adjustments for existing elements */
+/* Ensure social media icons in footer are 32px as per the CSS */
+footer .socialmedia img {
+  width: 32px;
+  height: auto;
+}
+
+/* Ensure general p styles don't override specific ones */
+main p {
+  text-align: left; /* Default for main content paragraphs */
+}
+
+/* Override for specific sections */
+.home-hero p, .home-grid-content .grid-item p, .trips-hero p {
+  text-align: center;
 }
